@@ -45,28 +45,160 @@
  * @author  your name 
  * @version date
  */
- 
- public class MixedLoopPractice
- {
- 	public static void oneToThirtyF()
- 	{
- 		
- 	}
- 	
- 	public static void oneToThirtyW()
- 	{
- 		
- 	}
- 	    
-	// keep making methods here
-    
-    
- 	public static void main(String[] args)
- 	{
- 		oneToThirtyF();
- 		oneToThirtyW();
- 		
- 		// test your methods here
- 	}
- }
+
+public class MixedLoopPractice
+{
+    public static void oneToThirtyF()
+    {
+        for(int i=1;i<=30;i++)
+        {
+            System.out.println(i);
+        }
+    }
+
+    public static void oneToThirtyW()
+    {
+        int i = 1;
+        while (i <= 30)
+        {
+            System.out.println(i);
+            i++;
+        }
+    }
+
+    public static void twentyToZeroF()
+    {
+        for(int i=20;i>=0;i-=2)
+        {
+            System.out.println(i);
+        }
+    }
+
+    public static void twentyToZeroW()
+    {
+        int i = 20;
+        while(i >= 0)
+        {
+            System.out.println(i);
+            i -= 2;
+        }   
+    }
+
+    public static int sumN(int n)
+    {
+        int i = 0;
+        int sum = 0;
+        while(i <= n)
+        {
+            sum = sum+i;
+            i++;
+        }
+        return sum;
+    }
+
+    public static void countMtoN(int m, int n)
+    {
+        while (m <= n)
+        {
+            System.out.println(m);
+            m++;
+        }
+
+    }
+
+    public static void iLoveJava(int n)
+    {
+        int i = 1;
+        while (i <= n)
+        {
+            System.out.println("I love java.");
+            i++;
+        }
+    }
+
+    public static void divBy2and9()
+    {
+        for(int i=1;i<=100;i++)
+        {
+            if(i%2==0 && i%9==0)
+            {
+                System.out.println(i); 
+            }
+        }
+    }
+
+    public static void divBy3and8()
+    {
+        int i=1;
+        while(i<=100)
+        {
+            if(i%3==0 && i%8==0)
+            {
+                System.out.println(i); 
+            }
+            i++;
+        }
+    }
+
+    public static int divBy5or7Sum()
+    {
+        int i=1;
+        int sum = 0;
+        while(i<=1000)
+        {
+            if(i%5==0 || i%7==0)
+            {
+                sum = sum+i;
+            }
+            i++;
+        }
+        return sum;
+    }
+
+    public static void bizzBuzz(int n)
+    {
+        int i = 1;
+        while (i <= n)
+        {
+            if(i%3==0 && i%5==0)
+            {
+                System.out.println("Bizz Buzz");
+            }
+            else if(i%3==0)
+            {
+                System.out.println("Bizz");
+            }
+            else if(i%5==0)
+            {
+                System.out.println("Buzz");
+            }
+            else
+            {
+                System.out.println(i);
+            }
+
+            i++;
+        }
+
+    }
+    // keep making methods here
+
+    public static void main(String[] args)
+    {
+        oneToThirtyF();
+        oneToThirtyW();
+        twentyToZeroF();
+        twentyToZeroW();
+        sumN(7);
+        countMtoN(4,7);
+        iLoveJava(7);
+        divBy2and9();
+        divBy3and8();
+        divBy5or7Sum();
+        bizzBuzz(15);
+        
+
+        // test your methods here
+    }
+}
  
