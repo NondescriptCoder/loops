@@ -189,12 +189,12 @@ public class MixedLoopPractice
         oneToThirtyW();
         twentyToZeroF();
         twentyToZeroW();
-        sumN(7);
+        System.out.println(sumN(7));
         countMtoN(4,7);
         iLoveJava(7);
         divBy2and9();
         divBy3and8();
-        divBy5or7Sum();
+        System.out.println(divBy5or7Sum());
         bizzBuzz(15);
         
 
